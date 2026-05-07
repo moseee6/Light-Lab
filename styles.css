@@ -1,0 +1,131 @@
+/* LIGHT LAB MASTER STYLES - NEON GLASSMORPHISM THEME */
+
+/* 1. GLOBAL STYLES & STARRY BACKGROUND */
+body {
+    background-color: #050505;
+    /* High-quality CSS star field */
+    background-image: 
+        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
+    background-size: 550px 550px, 350px 350px, 250px 250px;
+    background-position: 0 0, 40px 60px, 130px 270px;
+    
+    color: #e0e0e0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 2. HEADER & NAVIGATION */
+header {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(12px); /* Glass blur effect */
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+    position: sticky; /* Keeps nav at the top */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 10px;
+    margin: 0;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #00d4ff, #00ffaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: #999;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
+}
+
+/* 3. MAIN CONTAINER (Box Model) */
+.container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03); /* Translucent box */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    overflow: hidden; /* Rubric requirement */
+}
+
+/* 4. TYPOGRAPHY & FORMS */
+h2, h3 {
+    color: #00d4ff;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 40px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: white;
+    box-sizing: border-box; /* Proper box model */
+}
+
+button {
+    background: linear-gradient(45deg, #00d4ff, #00ffaa);
+    color: #000;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.4);
+}
+
+/* 5. IMAGES & GALLERY (Pseudo-classes) */
+.photo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.photo-list li {
+    margin-bottom: 60px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0
